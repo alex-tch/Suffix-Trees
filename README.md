@@ -33,11 +33,15 @@ Examples:
 4. Common Substring.lisp contains function longest-common-substr which retrieve the longest common substring in a multiple strings.  
 &emsp; (LONGEST-COMMON-SUBSTR (make-gen-sf-tree '("xabxa" "babxba")))  returns "abx"  
 &emsp; (LONGEST-COMMON-SUBSTR (make-gen-sf-tree '("xabxa" "babxba" "cab")))  returns "ab"
-
   
-# Suffix-Arrays  
-
-make-suffix-array  
-longest-common-prefix  
-number-of-diff-substr  
-k-mers  
+Suffix Array.lisp contains the following functions for working with suffix arrays:  
+  
+5. make-suffix-array generates suffix array for an input string as a  list of integers
+&ensp; (make-suffix-array "banana")	returns list (5 3 1 0 4 2).  
+6. longest-common-prefix retrieves the longest prefix for a two suffixes of a given string. It returns list with three integers:
+First two values are indexes for the two suffixes, last number is a length of common prefix for these two suffixes.
+&ensp; (longest-common-prefix "banana")	returns (3 1 3)   
+7. number-of-diff-substr cakculates number of different substrings for a given string.  
+&ensp; (NUMBER-OF-DIFF-SUBSTR "banana") returns 15   
+8. k-mers find all k-mers of a given length in the input string. Output is a list of pairs, where the first element is a substring of the specified length and second element is a frequency for that substring.    
+&ensp; (k-mers "banana" 2)  returnx  (("na" 2) ("ba" 1) ("an" 2))  
