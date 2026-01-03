@@ -3,7 +3,7 @@ This folders contains set of LISP programs for implementing suffix trees and som
 1. Create-Suffix-Tree.lisp main function which creates suffix tree using one or multiple strings. Need to setup global constant +delimeter+ which will be used for separating input strings e.g. (defconstant +delimeter+ "#").
 Examples:   
 (make-suffix-tree '("xabx")) generates list:  
-(((4) ("x" ("abx" (NIL (0)))  
+           (((4) ("x" ("abx" (NIL (0)))  
            ("" (NIL (3))))  
       ("abx" (NIL (1)))  
       ("bx" (NIL (2)))))    
