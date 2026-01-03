@@ -11,7 +11,7 @@ Examples:
   
 (make-suffix-tree '("xabx" "cbxab")) generates list:    
 &nbsp; (((5 6) ("x" ("ab" ("x#" (NIL (0))) ("#" (NIL (7))))  
-&emsp; &emsp; &emsp; &ensp;  ("#" (NIL (3))))  
+&emsp; &emsp; &emsp; &emsp;  ("#" (NIL (3))))  
 &emsp; &emsp; &ensp; ("ab" ("x#" (NIL (1))) ("#" (NIL (8))))  
 &emsp; &emsp; &ensp; ("b" ("x" ("#" (NIL (2))) ("ab#" (NIL (6)))) ("#" (NIL (9))))  
 &emsp; &emsp; &ensp; ("cbxab#" (NIL (5)))))  
