@@ -4,9 +4,9 @@ This folders contains set of LISP programs for implementing suffix trees and som
 Examples:   
 (make-suffix-tree '("xabx")) generates list:  
 &nbsp; (((4) ("x" ("abx" (NIL (0)))  
-&emsp; &emsp; &emsp;  ("" (NIL (3))))  
+&emsp; &emsp; &emsp; &ensp; ("" (NIL (3))))  
 &ensp; &ensp; &ensp; &ensp;  ("abx" (NIL (1)))  
-&ensp; &ensp; &ensp;  ("bx" (NIL (2)))))    
+&ensp; &ensp; &ensp; &ensp;  ("bx" (NIL (2)))))    
 (make-suffix-tree '("xabx" "cbxab")) generates list:  
 (((5 6) ("x" ("ab" ("x#" (NIL (0))) ("#" (NIL (7)))) ("#" (NIL (3))))  
         ("ab" ("x#" (NIL (1))) ("#" (NIL (8))))  
