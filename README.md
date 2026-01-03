@@ -17,18 +17,21 @@ Examples:
 &emsp; &emsp; &ensp; ("cbxab#" (NIL (5)))))  
 
     
-3. Patterns.lisp contains functions for retrieving patterns.
-   2.1. search-pattern function counts how many times pattern appears in the string.
-        (search-pattern (make-sf-tree "aabaabaaabaa") "baa") returns 3
-        (search-pattern (make-sf-tree "aabaabaaabaa") "baaa") returns 1
-   2.2. list-of-pattern function returns list with all positions where pattern appears in the string.
-        (list-of-pattern (make-sf-tree "aabaabaaabaa") "baa") returns list (2 5 9)
-        (list-of-pattern (make-sf-tree "aabaabaaabaa") "baaa") returns list (5)
+3. Patterns.lisp contains functions for retrieving patterns.  
+&emsp;  2.1. search-pattern function counts how many times pattern appears in the string.  
+&emsp; &emsp; (search-pattern (make-sf-tree "aabaabaaabaa") "baa") returns 3  
+&emsp; &emsp; (search-pattern (make-sf-tree "aabaabaaabaa") "baaa") returns 1  
+&emsp; 2.2. list-of-pattern function returns list with all positions where pattern appears in the string.  
+&emsp; &emsp; (list-of-pattern (make-sf-tree "aabaabaaabaa") "baa") returns list (2 5 9)
+&emsp; &emsp; (list-of-pattern (make-sf-tree "aabaabaaabaa") "baaa") returns list (5)
 
-4. Repeated String.lisp contains function longest-rep-str which retrieves the longest repeated substring.
-   (LONGEST-REP-STR (make-sf-tree "banana"))  returns "ana"
-   (LONGEST-REP-STR (make-sf-tree "aaaaa"))  returns "aaaa"
+4. Repeated String.lisp contains function longest-rep-str which retrieves the longest repeated substring.  
+&emsp; (LONGEST-REP-STR (make-sf-tree "banana"))  returns "ana"  
+&emsp; (LONGEST-REP-STR (make-sf-tree "aaaaa"))  returns "aaaa"  
+  
+5. Common Substring.lisp contains function longest-common-substr which retrieve the longest common substring in a multiple strings.  
+&emsp; (LONGEST-COMMON-SUBSTR (make-gen-sf-tree '("xabxa" "babxba")))  returns "abx"  
+&emsp; (LONGEST-COMMON-SUBSTR (make-gen-sf-tree '("xabxa" "babxba" "cab")))  returns "ab"
 
-5. Common Substring.lisp contains function longest-common-substr which retrieve the longest common substring in a multiple strings.
-   (LONGEST-COMMON-SUBSTR (make-gen-sf-tree '("xabxa" "babxba")))  returns "abx"
-   (LONGEST-COMMON-SUBSTR (make-gen-sf-tree '("xabxa" "babxba" "cab")))  returns "ab"
+  
+# Suffix-Arrays  
