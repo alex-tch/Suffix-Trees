@@ -1,5 +1,5 @@
 ;;; find the longest repeated string
-(defun longest-rep-str (tree)
+(defun longest-repeated-str (tree)
   (find-longest-string 
     (remove-duplicates 
       (mapcar #'concat-strings 
@@ -29,3 +29,4 @@
 
     (trv-tree tree ()))
   list-of-suf-str))
+
