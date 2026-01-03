@@ -11,9 +11,9 @@ Examples:
   
 (make-suffix-tree '("xabx" "cbxab")) generates list:    
 &nbsp; (((5 6) ("x" ("ab" ("x#" (NIL (0))) ("#" (NIL (7)))) ("#" (NIL (3))))  
-&emsp; &emsp; &emsp; &ensp; ("ab" ("x#" (NIL (1))) ("#" (NIL (8))))  
-&emsp; &emsp; &emsp; &ensp; ("b" ("x" ("#" (NIL (2))) ("ab#" (NIL (6)))) ("#" (NIL (9))))  
-&emsp; &emsp; &emsp; &ensp; ("cbxab#" (NIL (5)))))  
+&emsp; &ensp; &ensp; &ensp; ("ab" ("x#" (NIL (1))) ("#" (NIL (8))))  
+&emsp; &emsp; &ensp; &ensp; ("b" ("x" ("#" (NIL (2))) ("ab#" (NIL (6)))) ("#" (NIL (9))))  
+&emsp; &emsp; &ensp; ("cbxab#" (NIL (5)))))  
 
     
 3. Patterns.lisp contains functions for retrieving patterns.
